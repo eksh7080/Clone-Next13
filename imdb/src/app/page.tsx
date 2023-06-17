@@ -25,8 +25,6 @@ export default async function Home({ searchParams }) {
   const data = await gets.json();
   const res = data.results;
 
-  console.log(searchParams, '서치');
-
   return (
     <section>
       <Results res={res} />
