@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section className="max-w-6xl mx-auto space-y-4">
-      <h1 className="text-2xl font-medium text-amber-600">About</h1>
+      <h1 className="text-2xl font-medium text-amber-600 mt-4">About</h1>
       <p>
         Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
         Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in

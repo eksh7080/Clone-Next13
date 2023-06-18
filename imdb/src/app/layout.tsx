@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import './global.css';
 import Providers from './Providers';
 import Navbar from '@/components/Navbar';
+import SearchBox from '@/components/SearchBox';
 
 export const metadata = {
   title: 'INVU',
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
 
           {/* SearchBox */}
+          <SearchBox />
 
           {children}
         </Providers>
