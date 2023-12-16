@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const ImageSearchPage = async ({ searchParams }) => {
   const res = await fetch(
-    ` https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`,
+    `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`,
   );
 
   if (!res.ok) {

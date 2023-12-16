@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import HTMLReactParser from 'html-react-parser';
+import PaganationButton from './PaganationButton';
 
 interface IProps {
   result: any;
@@ -24,6 +25,9 @@ const ImageSearchResults = ({ result }: IProps) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="ml-16">
+        <PaganationButton />
       </div>
     </div>
   );

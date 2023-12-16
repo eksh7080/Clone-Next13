@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import HTMLReactParser from 'html-react-parser';
+import PaganationButton from './PaganationButton';
 
 interface IProps {
   result: any;
@@ -7,7 +8,7 @@ interface IProps {
 
 const WebSearchResults = ({ result }: IProps) => {
   return (
-    <section className="w-full mx-auto px-3 pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
+    <section className="w-full mx-auto px-3 pb-40 sm:pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
       <p className="text-gray-600 text-sm mb-5 mt-3">
         About {result.searchInformation.formattedTotalResults} result ({result.searchInformation?.formattedSearchTime} seconds)
       </p>
@@ -24,6 +25,7 @@ const WebSearchResults = ({ result }: IProps) => {
           <p className="text-gray-600">{HTMLReactParser(res.htmlSnippet)}</p>
         </div>
       ))}
+      <PaganationButton />
     </section>
   );
 };
